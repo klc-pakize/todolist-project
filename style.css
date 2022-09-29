@@ -11,8 +11,9 @@ a {
   color: white;
 }
 body {
-  background: url(./img/1620106702_32-phonoteka_org-p-delovoi-fon-dlya-instagram-44.jpg)
-    center fixed;
+  background-image: url(./img/1620106702_32-phonoteka_org-p-delovoi-fon-dlya-instagram-44.jpg);
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
