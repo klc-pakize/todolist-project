@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  font-size: 35px;
+}
+
+a {
+  color: white;
+}
+body {
+  background: url(/img/1620106702_32-phonoteka_org-p-delovoi-fon-dlya-instagram-44.jpg)
+    center fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 43, 43, 0.5) 7%,
+    rgb(15, 15, 15) 30%,
+    rgba(49, 46, 40, 0.185) 85%
+  );
+  height: 100%;
+  width: 620px;
+  border: 2px solid rgb(29, 29, 29);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.card1 {
+  width: 400px;
+}
+
+#txtTaskName {
+  border-radius: 20px;
+  border: 2px solid #fccf31;
+  outline: 2px solid #f55555;
+  color: white;
+  background-color: #242324;
+}
+#txtTaskName:active {
+  color: black;
+  background-color: #242324;
+}
+
+#btnAddNewTask {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background-color: #ff8800;
+  border: 1px solid #ff8800;
+  transition: all 1.5s;
+  color: white;
+}
+#btnAddNewTask:hover {
+  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  color: black;
+}
+
+.list-group-item {
+  background-image: linear-gradient(
+    80deg,
+    #2c2d2e 0%,
+    #383636 22%,
+    #242324 49%
+  );
+  color: white;
+  margin-top: 0.8rem;
+}
+
+#btnDeleteAll {
+  background-color: #ff8800;
+  border: 1px solid #ff8800;
+  transition: all 1.5s;
+}
+
+#btnDeleteAll:hover {
+  background-image: linear-gradient(135deg, #fccf31 10%, #f55555 100%);
+  color: black;
+}
