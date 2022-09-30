@@ -56,7 +56,7 @@ function deleteItemFormLS(text) {
 function creatItem(text) {
   //creat li (Li' yi oluşturduk)
   const li = document.createElement("li");
-  li.className = "list-group-item list-group-item-secondary";
+  li.className = "s ";
   //   console.log(li);
   li.appendChild(document.createTextNode(text));
 
@@ -81,14 +81,15 @@ function addNewItem(e) {
   //   console.log("submit");
   console.log(input.value);
 
-  if (input.value === "") {
+  if (input.value.trim() === "") {
     alert("Add new item..!");
+    input.value;
+  } else {
+    //save to LS
+    setItemToLS(input.value);
+    //creatItem
+    creatItem(input.value);
   }
-
-  //save to LS
-  setItemToLS(input.value);
-  //creatItem
-  creatItem(input.value);
 
   //clear input (input kısmını yeni değer için temizledik)
   input.value = "";
